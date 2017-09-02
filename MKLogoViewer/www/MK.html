@@ -1,0 +1,18 @@
+<html>
+<body bgcolor="#696969">
+<center><img src="MK.jpg" width="400" height="250"><br></center>
+<input type="text" id="MK" name="MK" value=" ">
+<p><button onclick="action()" type="button">Rewrite comment</button></p>
+<p><button onclick="action2()" type="button">View last comment</button></p>
+
+<script>
+    function action() {
+        window.localStorage['MK'] = document.getElementById('MK').value;
+    }
+
+    function action2() {
+        document.getElementById('MK').value = window.localStorage['MK'];
+    }
+</script>
+</body>
+</html>
